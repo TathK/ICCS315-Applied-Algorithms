@@ -10,10 +10,11 @@ struct Node {
     mutable Node* down;
 };
 
+
+
 int cointoss() {
     int count = 0;
-
-    while ( rand()%2 != 0 ) {
+    while ( rand()/float(RAND_MAX) >= 0.5) {
         count++;
     }
     return count;
@@ -121,7 +122,22 @@ class SkipList {
 
         std::cout << "Done inserting " << x << std::endl;
     }
-
+    bool find(int x) {
+        Node * current_node = left_sentinel[left_sentinel.size()-1];
+        while (true) {
+            current_node = traverse(current_node, x);
+            if (current_node->next ->data == x) {
+                return true;
+            }
+            else {
+                if (current_node->down == NULL) {
+                    return false;
+                }else {
+                    current_node = current_node->down;
+                }
+            }
+        }
+    }
     void remove(int x){
         int curr_height = left_sentinel.size() - 1 ;
         Node* current_node = left_sentinel[curr_height];
@@ -163,17 +179,12 @@ class SkipList {
 
 };
 
-
-
 int main() {
     SkipList list1;
     // list1.insert(5);
     // list1.insert(10);
     // list1.display_root();
-
-
     list1.display_left_sentinel();
-
     list1.insert(10);
     // list1.display_eachlevel();
     list1.insert(9);
@@ -182,25 +193,22 @@ int main() {
     // list1.display_eachlevel();
     list1.insert(7);
     // list1.display_eachlevel();
-
     list1.insert(1);
     list1.insert(2);
     list1.insert(3);
     list1.insert(4);
     list1.insert(5);
     list1.display_eachlevel();
-
-    list1.remove(6);
-    list1.remove(1);
-    list1.remove(10);
-    list1.remove(4);
-    list1.remove(8);    
-
-
-
-    list1.display_eachlevel();
-
-
+    // list1.remove(6);
+    // list1.remove(1);
+    // list1.remove(10);
+    // list1.remove(4);
+    // list1.remove(8);
+    // list1.display_eachlevel();
+    list1.display_left_sentinel();
+    std::cout << "find 5: " << list1.find(5) << std::endl;
+    list1.remove(5);
+    std::cout << "find 5: " << list1.find(5) << std::endl;
     return 0;
 }
 
