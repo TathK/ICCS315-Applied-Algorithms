@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/tath/Desktop/University/apal/hw1/skiplist/cmake-build-debug",
-		"source" : "/Users/tath/Desktop/University/apal/hw1/skiplist"
+		"build" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug",
+		"source" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist"
 	},
 	"version" : 
 	{

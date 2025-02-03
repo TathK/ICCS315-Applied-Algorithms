@@ -4,13 +4,6 @@
 #define MATH_MAX std::numeric_limits<int>::max()
 
 
-class SkipList {
-    struct node {
-        int data;
-        struct node *next;
-    };
-};
-
 struct Node {
     int data;
     mutable Node* next;
@@ -27,14 +20,14 @@ int cointoss() {
 
 }
 
-class LinkedList {
+class SkipList {
 
     std::vector<Node*> left_sentinel;
     std::vector<Node*> right_sentinel;
 
     // constructor
     public:
-    LinkedList() : right_sentinel(NULL), left_sentinel(NULL) {
+    SkipList() : right_sentinel(NULL), left_sentinel(NULL) {
         Node* sen_node = new Node();
         Node* sen_node2 = new Node();
         left_sentinel.push_back(sen_node);
@@ -173,7 +166,7 @@ class LinkedList {
 
 
 int main() {
-    LinkedList list1;
+    SkipList list1;
     // list1.insert(5);
     // list1.insert(10);
     // list1.display_root();

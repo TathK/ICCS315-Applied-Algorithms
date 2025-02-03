@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/tath/Desktop/University/apal/hw1/skiplist/cmake-build-debug"
+			"value" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/tath/Desktop/University/apal/hw1/skiplist/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/tath/Desktop/University/apal/hw1/skiplist"
+			"value" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/tath/Desktop/University/apal/hw1/skiplist/cmake-build-debug"
+			"value" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug"
 		},
 		{
 			"name" : "skiplist_IS_TOP_LEVEL",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/tath/Desktop/University/apal/hw1/skiplist"
+			"value" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist"
 		}
 	],
 	"kind" : "cache",
