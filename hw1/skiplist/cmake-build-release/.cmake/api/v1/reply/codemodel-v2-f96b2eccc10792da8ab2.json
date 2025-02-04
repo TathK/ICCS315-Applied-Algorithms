@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.29"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "skiplist::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-skiplist-Debug-35a956c2f1f30cc19ec5.json",
+					"jsonFile" : "target-skiplist-Release-02b5a8f3acec86a6c843.json",
 					"name" : "skiplist",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug",
+		"build" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-release",
 		"source" : "/Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist"
 	},
 	"version" : 
