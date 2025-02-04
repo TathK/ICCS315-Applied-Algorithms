@@ -192,9 +192,10 @@ class SkipList {
 
             if (current_node-> next -> data == x) {
                 Node * temp = current_node->next;
-                temp->next ->next = NULL;
-
                 current_node->next = temp->next;
+                temp->next = NULL;
+                temp->down = NULL;
+
                 delete temp;
                 std::cout << "done deleteing" << std::endl;
             }
