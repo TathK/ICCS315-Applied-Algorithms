@@ -84,12 +84,17 @@ class SkipList {
     };
 
     //return the latest location of the node on the same layer
-    static Node* traverse( Node* current, const int key) {
+    static Node* traverse( Node* current, int key) {
+        // std::cout << "tarvrse current start at " << current->data << std::endl;
+
         while (true) {
-            if (current->data < key and current->next-> data > key) {
+            // std::cout <<"next traverse is " << current->next->data << std::endl;
+            if (current->data < key and current->next-> data >= key) {
+                // std::cout << "did not move" << std::endl;
                 return current;
             }else {
                 current = current->next;
+                // std::cout <<" move to " << current->data << std::endl;
             }
         }
 
@@ -102,14 +107,9 @@ class SkipList {
         // std:: cout << "------------------------"<<std::endl << "inserting " << x << std::endl;
         int node_touched = 0;
         int coin_toss_result = cointoss();
-
         pad_sentinel(coin_toss_result);
-
         int curr_height = left_sentinel.size() - 1;
-
         Node* current_node = left_sentinel[curr_height];
-
-
         Node* temp1 = new Node();
         Node* temp2 = new Node();
         temp1->data = x;
@@ -142,6 +142,10 @@ class SkipList {
         current_node = traverse(current_node, x);
         temp1->next = current_node->next;
         current_node->next = temp1;
+
+        // I hate c this dumbass line  made me waste 3 hour
+        temp1-> down = NULL;
+
         delete temp2;
 
 
@@ -153,20 +157,26 @@ class SkipList {
         // std::cout << "Done inserting " << x << std::endl;
     }
     bool find(int x) {
+        int height = left_sentinel.size() - 1;
         Node * current_node = left_sentinel[left_sentinel.size()-1];
-        while (true) {
+        while (current_node != NULL) {
+            if (height < -3) {
+                std::cout <<"retard" << std::endl;
+                return false;
+            }
+            // std::cout<< "height "<< height << std::endl;
+            // std::cout <<"current node" << current_node->data << " " << std::endl;
             current_node = traverse(current_node, x);
             if (current_node->next ->data == x) {
                 return true;
             }
             else {
-                if (current_node->down == NULL) {
-                    return false;
-                }else {
-                    current_node = current_node->down;
-                }
+                current_node = current_node->down;
+                height--;
             }
+
         }
+        return false;
     }
 
     void remove(int x){
@@ -175,12 +185,20 @@ class SkipList {
 
         while (curr_height >= 0 ) {
             // std::cout << "at layer " << curr_height << std::endl;
+            // std::cout <<"Before traverse"<< current_node->data << " ";
             current_node = traverse(current_node, x);
-            if (current_node->next -> data == x) {
+            // std::cout << "After traverse"<< current_node->data << " ";
+            // std::cout << "next node data" << current_node->next -> data << std::endl;
+
+            if (current_node-> next -> data == x) {
                 Node * temp = current_node->next;
+                temp->next ->next = NULL;
+
                 current_node->next = temp->next;
                 delete temp;
+                std::cout << "done deleteing" << std::endl;
             }
+
             current_node = current_node->down;
             curr_height--;
         }
@@ -202,9 +220,21 @@ class SkipList {
         for (auto it = left_sentinel.rbegin(); it != left_sentinel.rend(); ++it) {
             display_layer(*it);
         }
+    } void check_if_root_down_null() {
+        auto head = left_sentinel[0];
+        for (auto it = head;  it != NULL;  it = it->next) {
+            if (it->down == NULL)
+                std::cout << "key: "<<it->data << " null" << std::endl;
+            else
+                std::cout << "key: "<<it->data << "have" <<it->down->data <<"something wrong"  << std::endl;
+        }
     }
 
+
+
 };
+
+
 
 int main() {
 
@@ -213,8 +243,8 @@ int main() {
 
     SkipList list1;
 
-    
-    int n = 3e6;
+
+    int n = 10;
     std::vector<int> v(n);
     for (int i = 0; i < n; i++) {
         v[i] = i;
@@ -256,7 +286,15 @@ int main() {
     // std::cout << total_allocation_time << std::endl;
     // std::cout << total_traverse_time << std::endl;
 
+    list1.display_eachlevel();
+    std::cout << "im finding 2 "<< list1.find(2);
+    list1.remove(2);
     // list1.display_eachlevel();
+    // list1.check_if_root_down_null();
+
+
+    std:: cout << list1.find(3);
+    std::cout << list1.find(2);
 
 
     return 0;
