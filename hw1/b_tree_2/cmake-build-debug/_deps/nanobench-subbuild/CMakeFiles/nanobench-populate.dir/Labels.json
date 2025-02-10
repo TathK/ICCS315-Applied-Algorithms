@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/CMakeFiles/nanobench-populate"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/CMakeFiles/nanobench-populate.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/CMakeFiles/nanobench-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-build.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-download.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-install.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-test.rule"
+		},
+		{
+			"file" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug/_deps/nanobench-subbuild/nanobench-populate-prefix/src/nanobench-populate-stamp/nanobench-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nanobench-populate"
+		],
+		"name" : "nanobench-populate"
+	}
+}

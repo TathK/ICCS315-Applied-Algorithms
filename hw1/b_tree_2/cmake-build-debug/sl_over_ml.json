@@ -1,0 +1,50 @@
+{
+  "context": {
+    "date": "2025-02-10T12:25:34+07:00",
+    "host_name": "Taths-MacBook-Pro.local",
+    "executable": "./b_tree_2",
+    "num_cpus": 14,
+    "mhz_per_cpu": 24,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 65536,
+        "num_sharing": 0
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 131072,
+        "num_sharing": 0
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 4194304,
+        "num_sharing": 1
+      }
+    ],
+    "load_avg": [1.07812,1.57178,1.82471],
+    "library_version": "v1.9.1",
+    "library_build_type": "debug",
+    "json_schema_version": 1
+  },
+  "benchmarks": [
+    {
+      "name": "BM_StringCreation<2>/20",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "BM_StringCreation<2>/20",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 231338,
+      "real_time": 3.0868649638194356e+03,
+      "cpu_time": 3.0853772402285845e+03,
+      "time_unit": "ns"
+    }
+  ]
+}

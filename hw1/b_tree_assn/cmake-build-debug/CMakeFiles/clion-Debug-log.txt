@@ -1,0 +1,4 @@
+Cannot generate into /Users/tath/Desktop/University/apal/hw1/b_tree_assn
+It was created with incompatible generator 'Xcode'
+
+Please either delete it manually or select another generation directory

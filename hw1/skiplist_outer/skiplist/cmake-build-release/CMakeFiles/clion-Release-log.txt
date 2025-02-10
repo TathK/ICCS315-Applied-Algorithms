@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist -B /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-release
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-release

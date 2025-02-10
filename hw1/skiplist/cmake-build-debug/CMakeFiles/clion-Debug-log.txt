@@ -1,4 +1,1 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist -B /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist/cmake-build-debug
+CMakeLists.txt not found in /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplist Select CMakeLists.txt

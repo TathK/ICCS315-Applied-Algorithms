@@ -1,0 +1,7 @@
+# ninja log v6
+0	602	1739183601854627305	CMakeFiles/coin_toss_experiment.dir/main.cpp.o	bfb0de75d1aa492e
+604	632	1739183602457918529	coin_toss_experiment	cc15ff81d6156f70
+5	602	1739183654904556593	CMakeFiles/coin_toss_experiment.dir/main.cpp.o	bfb0de75d1aa492e
+602	629	1739183655501731405	coin_toss_experiment	cc15ff81d6156f70
+8	628	1739184371609704849	CMakeFiles/coin_toss_experiment.dir/main.cpp.o	bfb0de75d1aa492e
+628	660	1739184372229954705	coin_toss_experiment	cc15ff81d6156f70

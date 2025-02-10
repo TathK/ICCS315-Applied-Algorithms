@@ -1,0 +1,3 @@
+/Users/tath/Desktop/University/apal/hw1/skiplistv2/cmake-build-debug/CMakeFiles/skiplistv2.dir
+/Users/tath/Desktop/University/apal/hw1/skiplistv2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tath/Desktop/University/apal/hw1/skiplistv2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

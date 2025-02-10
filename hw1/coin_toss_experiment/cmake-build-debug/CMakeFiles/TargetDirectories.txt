@@ -1,0 +1,3 @@
+/Users/tath/Desktop/University/apal/hw1/coin_toss_experiment/cmake-build-debug/CMakeFiles/coin_toss_experiment.dir
+/Users/tath/Desktop/University/apal/hw1/coin_toss_experiment/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tath/Desktop/University/apal/hw1/coin_toss_experiment/cmake-build-debug/CMakeFiles/rebuild_cache.dir

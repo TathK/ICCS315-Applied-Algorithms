@@ -1,0 +1,3 @@
+/Users/tath/Desktop/University/apal/hw1/b_tree_assn/CMakeFiles/b_tree_assn.dir
+/Users/tath/Desktop/University/apal/hw1/b_tree_assn/CMakeFiles/ALL_BUILD.dir
+/Users/tath/Desktop/University/apal/hw1/b_tree_assn/CMakeFiles/ZERO_CHECK.dir

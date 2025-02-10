@@ -1,0 +1,3 @@
+/Users/tath/Desktop/University/apal/hw1/b_tree_assn/cmake-build-debug/CMakeFiles/b_tree_assn.dir
+/Users/tath/Desktop/University/apal/hw1/b_tree_assn/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tath/Desktop/University/apal/hw1/b_tree_assn/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,130 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "_deps/google_benchmark-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.google_benchmark-build-Debug-8ea62de60eaa1f23229f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/google_benchmark-src"
+				},
+				{
+					"build" : "_deps/google_benchmark-build/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.google_benchmark-build.src-Debug-bebeafc7481daef8679b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/google_benchmark-src/src",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "b_tree_2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "benchmark",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "b_tree_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-b_tree_2-Debug-978519e4820b81dcd891.json",
+					"name" : "b_tree_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "benchmark::@31dfe5cbed3ca4bbf2a5",
+					"jsonFile" : "target-benchmark-Debug-2f132db7a2bf7d17ec42.json",
+					"name" : "benchmark",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "benchmark_main::@31dfe5cbed3ca4bbf2a5",
+					"jsonFile" : "target-benchmark_main-Debug-c2dd449289bffeb5f1df.json",
+					"name" : "benchmark_main",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2/cmake-build-debug",
+		"source" : "/Users/tath/Desktop/University/apal/hw1/b_tree_2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
