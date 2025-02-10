@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/tath/Desktop/University/apal/hw1/skiplistv2 -B /Users/tath/Desktop/University/apal/hw1/skiplistv2/cmake-build-release
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplistv2 -B /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplistv2/cmake-build-release
 -- The C compiler identification is AppleClang 16.0.0.16000026
 -- The CXX compiler identification is AppleClang 16.0.0.16000026
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done (0.4s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/tath/Desktop/University/apal/hw1/skiplistv2/cmake-build-release
+-- Build files have been written to: /Users/tath/Desktop/University/apal/ICCS315-Applied-Algorithms/hw1/skiplistv2/cmake-build-release

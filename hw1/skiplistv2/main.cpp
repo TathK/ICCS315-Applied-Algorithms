@@ -180,51 +180,15 @@ class SkipList {
         while (true) {
             if (current_node->data == x)
                 return true;
-            else if (current_node->data < x and current_node->next->data > x and current_node->down == NULL)
+            else if (current_node->up != NULL && current_node->up->next->data <= x)
+                current_node = current_node->up->next;
+            else if (current_node->next -> data <= x)
+                current_node = current_node->next;
+            else if (current_node->down != NULL)
+                current_node = current_node->down;
+            else
                 return false;
-            else if (current_node -> down == NULL and current_node -> up == NULL) {
-                    current_node = current_node->next;
-            }
-            else if (current_node ->down == NULL and current_node -> next -> data == MATH_MAX)
-                return false;
-
-            else if(current_node -> down == NULL and current_node -> up !=NULL) {
-                int up_right_elt = current_node -> up -> next -> data;
-                int next_elt = current_node -> next  -> data;
-                int current_elt = current_node -> data;
-                if (up_right_elt <= x)
-                    current_node = current_node -> up -> next;
-                else
-                    current_node = current_node -> next;
-
-            }
-
-            else if(current_node -> up == NULL) {
-                if (current_node->next -> data <= x)
-                    current_node = current_node -> next;
-                else
-                    current_node = current_node -> down;
-            }
-
-            else {
-                int up_right_elt = current_node -> up -> next -> data;
-                int next_elt = current_node -> next  -> data;
-                int down_right_elt = current_node -> down -> next -> data;
-                if (up_right_elt <= x)
-                    current_node = current_node -> up -> next;
-                else if(next_elt <= x)
-                    current_node = current_node -> next;
-                else if(down_right_elt <=x)
-                    current_node = current_node -> down -> next;
-                else
-                    current_node = current_node -> down;
-
-            }
-
-
-
         }
-
 
 
 
@@ -492,7 +456,7 @@ void test_lookup_base(int n) {
     file.close();
 }
 
-void test_lookupV2(int n) {
+void test_lookupV2(int n, float percentile) {
     std::vector<double> result = std::vector<double>();
     struct timespec start, end;
     std::stringstream ss;
@@ -509,7 +473,7 @@ void test_lookupV2(int n) {
             list1.insert(v[i]);
 
         for (int noise_no = 0; noise_no < 10; noise_no++) {
-            int hardcap = int(.25 *  n);
+            int hardcap = int(percentile *  n);
             auto start = std::chrono::high_resolution_clock::now();
             for (int i = 0; i < hardcap; i++)
                 list1.find(v[i]);
@@ -526,7 +490,7 @@ void test_lookupV2(int n) {
 
     file.close();
 }
-void test_lookup_baseV2(int n) {
+void test_lookup_baseV2(int n, float percentile) {
     std::vector<double> result = std::vector<double>();
     struct timespec start, end;
     std::stringstream ss;
@@ -544,7 +508,7 @@ void test_lookup_baseV2(int n) {
             list1.insert(v[i]);
 
         for (int noise_no = 0; noise_no < 10; noise_no++) {
-            int hardcap = int(.25 *  n);
+            int hardcap = int(percentile *  n);
             auto start = std::chrono::high_resolution_clock::now();
             for (int i = 0; i < hardcap; i++)
                 list1.find(v[i]);
@@ -563,9 +527,9 @@ void test_lookup_baseV2(int n) {
 }
 
 int main() {
-    for (int i = 1; i <= 1e6; i += 25000) {
-        test_lookupV2(i);
-        test_lookup_baseV2(i);
+    for (int i = 2e6; i <= 1e7; i += 250000) {
+        test_lookupV2(i,0.001);
+        test_lookup_baseV2(i,0.001);
     }
 
 
